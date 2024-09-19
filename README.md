@@ -6,9 +6,6 @@ This repository provides a temnplate for a full stack solution for a Java spring
 presents a monolithic web app based full stack solutions. Building microservices is often considered the norm these days, however 
 monolithic apps still have valid uses for which they can be used, one example being, when doing proof of concept for a new product. 
 
-Have a read of [this blogpost] for a walkthrough of this solution.
-
-
 ## Details for the Spring Boot API
 A simple spring boot based REST API that can CRUD's data for accounts for customers.
 
@@ -29,14 +26,8 @@ The purpose of the UI is to demonstrate certain concepts of UI integration with 
 
 ### Build Plugin
 
-To build a react app and launch it when running ``` mvn spring-boot:run```, the [frontend-maven-plugin] is used. Have a look at the [pom file] to know more.
+To build a react app and launch it when running `mvn spring-boot:run`, the [frontend-maven-plugin] is used. Have a look at the [pom file] to know more.
 
-# More great tutorials and code samples
-I will be writing a detailed tutorial on how to work with this repo on my blog. Until then refer to [my blog] for other tutorials and "how-to" articles with detailed code samples.
-
-If you like what I am doing, you can [buy me a coffee]
-
-[this blogpost]: https://mydaytodo.com/spring-boot-api-with-reactjs/
 [pom file]: https://github.com/cptdanko/spring-boot-react-template/blob/main/pom.xml#L59
 [frontend-maven-plugin]: https://github.com/eirslett/frontend-maven-plugin
 [Jokes API with Spring RestTemplate]: https://mydaytodo.com/how-to-build-a-jokes-client-in-java-spring-boot-with-resttemplate/
@@ -46,7 +37,4 @@ If you like what I am doing, you can [buy me a coffee]
 [AWS DynamoDB how to]: https://mydaytodo.com/aws-dynamodb-typescript-how-to/
 [frontend in the repo]: https://github.com/cptdanko/react_typescript_todo_list
 [native iOS app]: https://apps.apple.com/au/app/my-day-to-do-smart-task-list/id1020072048
-[my blog]: https://mydaytodo.com/blog/
 [AWS docs]: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
-[blogpost]: https://mydaytodo.com/blog/
-[buy me a coffee]: https://www.buymeacoffee.com/bhumansoni
