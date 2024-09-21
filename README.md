@@ -2,7 +2,7 @@
 
 A template to create a monolithic Spring Boot app with a reactjs based front-end.
 
-This repository provides a temnplate for a full stack solution for a Java spring boot API with a react based front-end. This repository 
+Repository provides a temnplate for a full stack solution for a Java spring boot API with a react based front-end. This repository 
 presents a monolithic web app based full stack solutions. Building microservices is often considered the norm these days, however 
 monolithic apps still have valid uses for which they can be used, one example being, when doing proof of concept for a new product. 
 
