@@ -3,6 +3,8 @@ package com.mydaytodo.template.springbootreact.model;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -28,7 +30,8 @@ public class Todo {
     @Size(min = 3)
     private String task;
 
-    private boolean completed;
+    @Enumerated(EnumType.STRING)
+    private TaskStatus status;
 
     @ManyToOne
     @JsonBackReference
