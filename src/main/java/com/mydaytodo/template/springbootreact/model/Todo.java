@@ -1,5 +1,7 @@
 package com.mydaytodo.template.springbootreact.model;
 
+import java.util.UUID;
+
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.Entity;
@@ -24,8 +26,8 @@ import lombok.NoArgsConstructor;
 @Table(name = "todos")
 public class Todo {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID  id;
 
     @Size(min = 3)
     private String task;

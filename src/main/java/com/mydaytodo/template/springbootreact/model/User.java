@@ -2,6 +2,7 @@
 
 import java.util.List;
 
+import java.util.UUID;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.*;
@@ -20,14 +21,14 @@ import lombok.NoArgsConstructor;
 @Table(name = "users")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID  id;
 
     @Column(unique = true)
     @Email(message = "Please provide a valid email address")
     private String email;
 
-    @Size(min = 8 ,max = 12,message = "password should be between 8 to 12 characters")
+    @Size(min = 8 ,max = 20,message = "password should be between 8 to 12 characters")
     private String password;
 
     @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "user")
