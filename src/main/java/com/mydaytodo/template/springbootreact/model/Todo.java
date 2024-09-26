@@ -32,8 +32,9 @@ public class Todo {
     @Size(min = 3)
     private String task;
 
+    @Builder.Default
     @Enumerated(EnumType.STRING)
-    private TaskStatus status;
+    private TaskStatus status = TaskStatus.UNSPECIFIED;
 
     @ManyToOne
     @JsonBackReference
