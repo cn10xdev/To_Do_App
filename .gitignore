@@ -2,3 +2,4 @@ target/
 *.lock
 *.temp
 frontend/node_modues/
+.vscode/
